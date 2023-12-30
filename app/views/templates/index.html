@@ -1,0 +1,32 @@
+<!-- app/views/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('main.redirect_me') }}">Redirect to "Me"</a></li>
+            <li><a href="{{ url_for('main.noticias') }}">Go to "Noticias"</a></li>
+            <li><a href="{{ url_for('main.ranking') }}">Go to "Ranking"</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="latest-updates">
+            <h2>Latest Updates</h2>
+            <p>Check out our latest content and stay informed!</p>
+
+            <!-- Add more content as needed -->
+        </section>
+    </main>
+</body>
+</html>
